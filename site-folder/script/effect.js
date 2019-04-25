@@ -72,7 +72,7 @@ class Effect {
     return document.querySelectorAll(elem);
   }
   fetchArticle(tag) {
-    fetch('/gsl_gp_sites/Princess/site-folder/script/JSON/articles.json').then(res => res.json().then(obj => {
+    fetch('./JSON/articles.json').then(res => res.json().then(obj => {
       popup.destructure(obj[tag])
     }))
   }
@@ -105,39 +105,6 @@ class Effect {
     })
     popup.element('.title').innerHTML = 'Hover over any part of the Images to meet the members'
     popup.element('.info').innerHTML = '';
-  }
-  isVisible(el) {
-    try {
-      let rect = el.getBoundingClientRect(),
-        vWidth = window.innerWidth || doc.documentElement.clientWidth,
-        vHeight = window.innerHeight || doc.documentElement.clientHeight,
-        efp = function (x, y) {
-          return document.elementFromPoint(x, y)
-        };
-
-      // Return false if it's not in the viewport
-      if (rect.right < 0 || rect.bottom < 0 ||
-        rect.left > vWidth || rect.top > vHeight) {
-        return false;
-      } else if (
-        el.contains(efp(rect.left, rect.top)) || // If It is in the viewport
-        el.contains(efp(rect.right, rect.top)) ||
-        el.contains(efp(rect.right, rect.bottom)) ||
-        el.contains(efp(rect.left, rect.bottom))
-      ) {
-        if (el.classList.contains('hidden-img')) {
-          el.classList.remove('hidden-img');
-          el.classList.add('visible-img');
-        } else {
-          el.classList.remove('hidden');
-          el.classList.add('visible');
-        }
-        console.log(true);
-        return true;
-      }
-    } catch (error) {
-      console.log(error)
-    }
   }
 
   inView(el) {
