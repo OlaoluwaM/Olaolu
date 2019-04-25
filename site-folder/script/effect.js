@@ -1,7 +1,7 @@
 class Effect {
   constructor() {
     this.elementList('.down-arrow').forEach(arr => {
-      fetch('Olaoluwa.github.io/site-folder/scroll.svg').then(res => res.text().then(svg => {
+      fetch('site-folder/scroll.svg').then(res => res.text().then(svg => {
         arr.innerHTML = svg;
       }))
       arr.addEventListener('click', () => {
