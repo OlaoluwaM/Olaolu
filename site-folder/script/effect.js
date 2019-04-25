@@ -1,7 +1,7 @@
 class Effect {
   constructor() {
     this.elementList('.down-arrow').forEach(arr => {
-      fetch('../scroll.svg').then(res => res.text().then(svg => {
+      fetch('site-folder/scroll.svg').then(res => res.text().then(svg => {
         arr.innerHTML = svg;
       }))
       arr.addEventListener('click', () => {
@@ -72,7 +72,7 @@ class Effect {
     return document.querySelectorAll(elem);
   }
   fetchArticle(tag) {
-    fetch('./JSON/articles.json').then(res => res.json().then(obj => {
+    fetch('site-folder/script/JSON/articles.json').then(res => res.json().then(obj => {
       popup.destructure(obj[tag])
     }))
   }
