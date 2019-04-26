@@ -73,7 +73,7 @@
 .bttn>a {
   transition: .5s ease;
   color: #000;
-  /* text-decoration: one; */
+  text-decoration: none;
 }
 
 @keyframes point-down {
