@@ -6,7 +6,7 @@ main {
 }
 
 .text>h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 0;
   letter-spacing: .1rem;
   font-weight: 100;
@@ -15,7 +15,7 @@ main {
 
 .text>p {
   font-family: var(--font-2-b);
-  font-size: 1.2rem;
+  font-size: .8rem;
   line-height: 2.3rem;
   letter-spacing: .1rem;
   margin-bottom: 50px;

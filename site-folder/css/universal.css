@@ -240,8 +240,4 @@ body {
   .content {
     flex-direction: column;
   }
-
-  .pri {
-    object-position: 90%;
-  }
 }

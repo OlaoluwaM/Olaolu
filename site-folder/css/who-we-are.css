@@ -30,6 +30,10 @@
   transition: 1s ease;
 }
 
+.pri {
+  object-position: 90%
+}
+
 .current {
   height: 100%;
 }
