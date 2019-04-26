@@ -34,7 +34,7 @@ class Effect {
           return
         }
       })
-      this.element('.images').addEventListener('focusout', () => {
+      this.element('.images').addEventListener('mouseout', () => {
         if (event.target.matches('img')) {
           popup.returnToNormal();
         } else {
