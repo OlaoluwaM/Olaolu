@@ -59,7 +59,6 @@ class Effect {
 
       }
     }
-  }
   element(elem) {
     return document.querySelector(elem);
   }
@@ -130,6 +129,5 @@ class Effect {
       console.log(error)
     }
   }
-
 }
 let popup = new Effect();
