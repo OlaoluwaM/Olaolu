@@ -39,6 +39,14 @@
 .sport-day {
   position: absolute;
   width: 100%;
+  display: flex;
+  z-index: -22;
+}
+
+.sport-day>img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .bttn {
