@@ -179,26 +179,26 @@ main {
 .hidden-img {
   transition: 1s ease-in-out;
   opacity: 0;
-  transform: translateX(200px);
+  /* transform: translateX(200px); */
 }
 
 .visible-img {
   transition: 1s .9s ease-in-out;
   opacity: 1;
-  transform: translateX(0px);
+  /* transform: translateX(0px); */
 }
 
 /* Content */
 .hidden {
   transition: 1s ease-in-out;
   opacity: 0;
-  transform: translateX(-200px);
+  /* transform: translateX(-200px); */
 }
 
 .visible {
   transition: 1s .5s ease-in-out;
   opacity: 1;
-  transform: translateX(0px);
+  /* transform: translateX(0px); */
 }
 
 /*Utility*/
