@@ -47,11 +47,13 @@
 }
 
 .title {
-  font-size: 3.2rem;
+  font-size: 2.9rem;
   font-family: var(--font-1-t);
   font-weight: 500;
   transform: translateY(50px);
   opacity: 0;
+  margin-bottom: 10px;
+  margin-top: 15px;
   animation: rise-t .5s ease-out forwards;
   text-transform: capitalize;
 }
