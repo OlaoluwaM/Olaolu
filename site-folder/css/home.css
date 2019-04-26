@@ -1,26 +1,23 @@
 .container1 {
   padding: 0;
-  /* display: flex; */
-  /* height: 100vh; */
   flex-direction: column-reverse;
 }
 
 .container1>.img {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
   max-width: 100%;
   object-position: 100% 100%;
   position: relative;
 }
 
 .text {
-  flex-basis: 50%;
   position: relative;
   margin: 0;
   padding: 3%;
   padding-left: 4%;
   padding-top: 0;
   background-color: var(--shade-of-white);
-  height: 80%;
+  height: 100%;
 }
 
 .text>h1 {
@@ -37,6 +34,11 @@
   font-size: .8rem;
   line-height: 1.5rem;
   width: 70%;
+}
+
+.sport-day {
+  position: absolute;
+  width: 100%;
 }
 
 .bttn {
