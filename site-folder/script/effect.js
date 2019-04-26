@@ -72,7 +72,7 @@ class Effect {
     return document.querySelectorAll(elem);
   }
   fetchArticle(tag) {
-    fetch('./JSON/articles.json').then(res => res.json().then(obj => {
+    fetch('../script/JSON/articles.json').then(res => res.json().then(obj => {
       popup.destructure(obj[tag])
     }))
   }
