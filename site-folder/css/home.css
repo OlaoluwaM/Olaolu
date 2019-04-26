@@ -49,6 +49,7 @@
   margin-top: 15px;
   padding: .9rem;
   transition: .5s ease;
+  cursor: pointer;
 }
 
 .bttn::before {
