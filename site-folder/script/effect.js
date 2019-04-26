@@ -27,14 +27,14 @@ class Effect {
       })
     })
     if (location.href.search('who-we-are.html') > -1) {
-      this.element('.images').addEventListener('mouseover', event => {
+      this.element('.images').addEventListener('click', event => {
         if (event.target.matches('img')) {
           popup.expandImage();
         } else {
           return
         }
       })
-      this.element('.images').addEventListener('mouseout', () => {
+      this.element('.images').addEventListener('focusout', () => {
         if (event.target.matches('img')) {
           popup.returnToNormal();
         } else {
@@ -42,23 +42,23 @@ class Effect {
         }
       })
     }
-      window.onscroll = () => {
-        this.elementList('.hidden').forEach(elem => {
-          if (this.inView(elem)) {
-            elem.classList.remove('hidden');
-            elem.classList.add('visible');
-          }
-        })
+    window.onscroll = () => {
+      this.elementList('.hidden').forEach(elem => {
+        if (this.inView(elem)) {
+          elem.classList.remove('hidden');
+          elem.classList.add('visible');
+        }
+      })
 
-        this.elementList('.hidden-img').forEach(elem => {
-          if (this.inView(elem)) {
-            elem.classList.remove('hidden-img');
-            elem.classList.add('visible-img');
-          }
-        })
+      this.elementList('.hidden-img').forEach(elem => {
+        if (this.inView(elem)) {
+          elem.classList.remove('hidden-img');
+          elem.classList.add('visible-img');
+        }
+      })
 
-      }
     }
+  }
   element(elem) {
     return document.querySelector(elem);
   }
