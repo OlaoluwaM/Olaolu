@@ -42,11 +42,6 @@ class Effect {
         }
       })
     }
-    if (location.href.search('index.html') > -1) {
-      window.onload = () => {
-        this.element('.text').classList.add('hidden')
-        this.element('.img').classList.add('hidden-img');
-      }
       window.onscroll = () => {
         this.elementList('.hidden').forEach(elem => {
           if (this.inView(elem)) {
