@@ -58,6 +58,9 @@ class Effect {
       })
 
     }
+
+    this.homeImageReveal();
+
   }
   element(elem) {
     return document.querySelector(elem);
@@ -127,6 +130,16 @@ class Effect {
       }
     } catch (error) {
       console.log(error)
+    }
+  }
+  homeImageReveal() {
+    if (location.href.search('index.html') > -1) {
+      this.element('.sport-day').childNodes.forEach((img, ind) => {
+        if (img.nodeType === 1) {
+          let delay = (ind + 1);
+          img.style = `transition: 1s ${delay}s ease; opacity: 1`
+        }
+      })
     }
   }
 }

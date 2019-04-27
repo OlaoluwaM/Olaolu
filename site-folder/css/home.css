@@ -17,13 +17,14 @@
   padding-left: 4%;
   padding-top: 0;
   background-color: var(--shade-of-white);
-  height: 100vh;
+  height: 109vh;
   background: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
+  text-align: center;
 }
 
 .text>h1 {
@@ -45,8 +46,8 @@
 .sport-day {
   position: absolute;
   width: 100%;
+  height: 100%;
   display: flex;
-  top: -30%;
   z-index: -1;
   justify-content: center;
   align-items: center;
@@ -55,12 +56,7 @@
 
 .sport-day>img {
   max-width: 50%;
-  height: auto;
   opacity: 0;
-}
-
-.strobe {
-  opacity: 1;
 }
 
 .bttn {
@@ -99,10 +95,8 @@
 }
 
 .bttn>a {
-  /* position: relative; */
   transition: .5s ease;
   color: #000;
-  /* z-index: 11; */
   width: 100%;
   text-decoration: none;
 }
@@ -121,8 +115,21 @@
   }
 }
 
-/* @media screen and (max-width: 1860px) {
-  .container1 {
-    flex-direction: column-reverse;
+@media screen and (max-width: 1200px) {
+  .sport-day>img {
+    height: 50%;
+    object-fit: cover;
+    object-position: 0% 50%;
   }
-} */
+
+  .text {
+    height: 100vh;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sport-day {
+    flex-direction: column;
+  }
+}
