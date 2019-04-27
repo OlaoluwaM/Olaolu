@@ -59,8 +59,6 @@ class Effect {
 
     }
 
-    this.homeImageReveal();
-
   }
   element(elem) {
     return document.querySelector(elem);
